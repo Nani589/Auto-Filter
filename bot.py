@@ -102,7 +102,7 @@ class Bot(Client):
 
 
 # --- Main Entry Point ---
-if name == "main":
+if __name__ == "main":
     # ✅ Safe uvloop initialization (fixes "no current event loop" error)
     asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
