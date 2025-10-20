@@ -5,7 +5,7 @@ logging.basicConfig(
     handlers=[logging.StreamHandler()]
 )
 logging.getLogger('hydrogram').setLevel(logging.ERROR)
-logger = logging.getLogger(_name_)
+logger = logging.getLogger(__name__)
 
 import os
 import time
