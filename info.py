@@ -21,17 +21,17 @@ def is_valid_ip(ip):
     return re.match(ip_pattern, ip) is not None
 
 # Bot information
-API_ID = environ.get('API_ID', '')
+API_ID = environ.get('API_ID', '11333800')
 if len(API_ID) == 0:
     logger.error('API_ID is missing, exiting now')
     exit()
 else:
     API_ID = int(API_ID)
-API_HASH = environ.get('API_HASH', '')
+API_HASH = environ.get('API_HASH', 'e1b9a48abe756df09de3cc456975b481')
 if len(API_HASH) == 0:
     logger.error('API_HASH is missing, exiting now')
     exit()
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8228644851:AAFhA-C11yAKDTBTUWUFJI2ABvMNO6Y7csg')
 if len(BOT_TOKEN) == 0:
     logger.error('BOT_TOKEN is missing, exiting now')
     exit()
@@ -42,7 +42,7 @@ PORT = int(environ.get('PORT', '80'))
 PICS = (environ.get('PICS', 'https://i.postimg.cc/8C15CQ5y/1.png https://i.postimg.cc/gcNtrv0m/2.png https://i.postimg.cc/cHD71BBz/3.png https://i.postimg.cc/F1XYhY8q/4.png https://i.postimg.cc/1tNwGVxC/5.png https://i.postimg.cc/dtW30QpL/6.png https://i.postimg.cc/139dvs3c/7.png https://i.postimg.cc/QtXVtB8K/8.png https://i.postimg.cc/y8j8G1XV/9.png https://i.postimg.cc/zDF6KyJX/10.png https://i.postimg.cc/fyycVqzd/11.png https://i.postimg.cc/26ZBtBZr/13.png https://i.postimg.cc/PJn8nrWZ/14.png https://i.postimg.cc/cC7txyhz/15.png https://i.postimg.cc/kX9tjGXP/16.png https://i.postimg.cc/zXjH4NVb/17.png https://i.postimg.cc/sggGrLhn/18.png https://i.postimg.cc/y8pgYTh7/19.png')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '')
+ADMINS = environ.get('ADMINS', '@VkRC_177')
 if len(ADMINS) == 0:
     logger.error('ADMINS is missing, exiting now')
     exit()
@@ -53,7 +53,7 @@ else:
 INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '').split()]
 if len(INDEX_CHANNELS) == 0:
     logger.info('INDEX_CHANNELS is empty')
-LOG_CHANNEL = environ.get('LOG_CHANNEL', '')
+LOG_CHANNEL = environ.get('LOG_CHANNEL', ' -1002410328884')
 if len(LOG_CHANNEL) == 0:
     logger.error('LOG_CHANNEL is missing, exiting now')
     exit()
@@ -61,7 +61,7 @@ else:
     LOG_CHANNEL = int(LOG_CHANNEL)
     
 # support group
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '')
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1003181569789')
 if len(SUPPORT_GROUP) == 0:
     logger.error('SUPPORT_GROUP is missing, exiting now')
     exit()
@@ -69,7 +69,7 @@ else:
     SUPPORT_GROUP = int(SUPPORT_GROUP)
 
 # MongoDB information
-DATA_DATABASE_URL = environ.get('DATA_DATABASE_URL', "")
+DATA_DATABASE_URL = environ.get('DATA_DATABASE_URL', "mongodb+srv://Strange:Strange@cluster0.wpvqktw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 if len(DATA_DATABASE_URL) == 0:
     logger.error('DATA_DATABASE_URL is missing, exiting now')
     exit()
@@ -84,11 +84,11 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/HA_Bots_Support')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/HA_Bots')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/HA_Films_World')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/HA_Bots")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/HA_Bots")
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+cd6EEnVbU_BjYTRl')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/Manchi_moviesZ')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/Manchi_moviesZ')
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/Manchi_moviesZ")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Manchi_moviesZ")
 
 # Bot settings
 TIME_ZONE = environ.get('TIME_ZONE', 'Asia/Colombo') # Replace your time zone
@@ -119,7 +119,7 @@ SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 SHORTLINK = is_enabled('SHORTLINK', False)
 
 # for stream
-IS_STREAM = is_enabled('IS_STREAM', True)
+IS_STREAM = is_enabled('IS_STREAM', False)
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "")
 if len(BIN_CHANNEL) == 0:
     logger.error('BIN_CHANNEL is missing, exiting now')
