@@ -123,13 +123,13 @@ IS_STREAM = is_enabled('IS_STREAM', False)
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "")
 if len(BIN_CHANNEL) == 0:
     logger.error('BIN_CHANNEL is missing, exiting now')
-    exit()
+    
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
 URL = environ.get("URL", "")
 if len(URL) == 0:
     logger.error('URL is missing, exiting now')
-    exit()
+    
 else:
     if URL.startswith(('https://', 'http://')):
         if not URL.endswith("/"):
@@ -138,7 +138,7 @@ else:
         URL = f'http://{URL}/'
     else:
         logger.error('URL is not valid, exiting now')
-        exit()
+        
 
 #start command reactions and sticker
 REACTIONS = [reactions for reactions in environ.get('REACTIONS', '🤝 😇 🤗 😍 👍 🎅 😐 🥰 🤩 😱 🤣 😘 👏 😛 😈 🎉 ⚡️ 🫡 🤓 😎 🏆 🔥 🤭 🌚 🆒 👻 😁').split()]  # Multiple reactions can be used separated by space
